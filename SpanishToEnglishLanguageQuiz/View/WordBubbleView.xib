@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lr-6b-K0h">
-                    <rect key="frame" x="21" y="156" width="313" height="38"/>
+                    <rect key="frame" x="21" y="129" width="313" height="98"/>
                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                     <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -35,12 +35,12 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="NbR-Zo-co9" secondAttribute="bottom" constant="23" id="GTQ-O5-9pS"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Lr-6b-K0h" secondAttribute="trailing" constant="16" id="M0M-Dp-XAn"/>
-                <constraint firstItem="1Lr-6b-K0h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="112" id="Uq3-IT-qbP"/>
+                <constraint firstItem="1Lr-6b-K0h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="85" id="Uq3-IT-qbP"/>
                 <constraint firstItem="NbR-Zo-co9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="Wm5-bo-oZk"/>
                 <constraint firstItem="NbR-Zo-co9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="aX8-oz-BDh"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NbR-Zo-co9" secondAttribute="trailing" constant="16" id="cGX-Fv-uxD"/>
                 <constraint firstItem="1Lr-6b-K0h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="dzg-wB-FVm"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Lr-6b-K0h" secondAttribute="bottom" constant="122" id="xha-hS-N8Z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Lr-6b-K0h" secondAttribute="bottom" constant="89" id="xha-hS-N8Z"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

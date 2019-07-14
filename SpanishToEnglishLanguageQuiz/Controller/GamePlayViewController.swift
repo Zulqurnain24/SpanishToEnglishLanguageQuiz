@@ -24,32 +24,36 @@ class GamePlayViewController: UIViewController {
     @IBOutlet weak var scoreDisplayView: UIView!
     @IBOutlet weak var nextButtonDisplayView: UIView!
     
-    let questionView = Bundle.main.loadNibNamed("QuestionView", owner: self, options: nil)?.last as! QuestionView
+    let questionView = Bundle.main.loadNibNamed(Nib.questionView.rawValue, owner: self, options: nil)?.last as! QuestionView
     
-    let stopWatchCounter = Bundle.main.loadNibNamed("StopWatchCounter", owner: self, options: nil)?.last as! StopWatchCounter
+    let stopWatchCounter = Bundle.main.loadNibNamed(Nib.stopWatchCounter.rawValue, owner: self, options: nil)?.last as! StopWatchCounter
     
     
-    let wordBubbleView = Bundle.main.loadNibNamed("WordBubbleView", owner: self, options: nil)?.last as! WordBubbleView
+    let wordBubbleView = Bundle.main.loadNibNamed(Nib.wordBubbleView.rawValue, owner: self, options: nil)?.last as! WordBubbleView
     
-    let scoreView = Bundle.main.loadNibNamed("ScoreView", owner: self, options: nil)?.last as! ScoreView
+    let scoreView = Bundle.main.loadNibNamed(Nib.scoreView.rawValue, owner: self, options: nil)?.last as! ScoreView
     
-    let buttonView = Bundle.main.loadNibNamed("ButtonView", owner: self, options: nil)?.last as! ButtonView
+    let buttonView = Bundle.main.loadNibNamed(Nib.buttonView.rawValue, owner: self, options: nil)?.last as! ButtonView
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        configure()
         setupView()
         populateQuestionsArray()
         updateScore()
     }
 
+    func configure() {
+        self.title = Strings.GamePlayViewControllerTitle.rawValue
+        self.view.accessibilityIdentifier = Strings.GamePlayViewControllerAccessibilityIdentifier.rawValue
+    }
+    
     func setupView() {
         buttonView.buttonCallback = {
-            self.wordBubbleView.finishAnimations()
-            self.stopWatchCounter.finishAnimations()
             self.gameLogic()
         }
-        buttonView.setButtonTitle("Next")
+        buttonView.setButtonTitle(Strings.nextButtonTitle.rawValue)
         nextButtonDisplayView.addSubview(buttonView)
         quizQuestionDisplayView.addSubview(questionView)
         stopWatchDisplayView.addSubview(stopWatchCounter)
@@ -76,10 +80,10 @@ class GamePlayViewController: UIViewController {
     }
     
     func getShuffledChoice() -> String? {
-        var array = quizDataSource.getQuizArray()
-        array.shuffle()
+        var array = gamePlayViewModel?.quizArray
+        array?.shuffle()
         
-        guard let shuffledChoice = array.first?.english else { return nil }
+        guard let shuffledChoice = array?.first?.english else { return nil }
         return shuffledChoice
     }
     
@@ -115,7 +119,9 @@ class GamePlayViewController: UIViewController {
     
     func populateQuestionsArray() {
         quizDataSource.populateArrayFromJSONFile(completionHandler: { wordsArray in
-            gamePlayViewModel = GamePlayViewModel(wordsArray)
+            var array = wordsArray
+            array.shuffle() //shuffled the array to show different quiz to user each time
+            gamePlayViewModel = GamePlayViewModel(array)
             self.gameLogic()
         })
     }
@@ -160,19 +166,20 @@ extension GamePlayViewController {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard stopWatchCounter.isAnimating  == true && buttonView.isUserInteractionEnabled == false else { return }
+        guard stopWatchCounter.isAnimating == true || wordBubbleView.frame.origin.y != -214 && buttonView.isUserInteractionEnabled == false else {
+            return }
         guard let firstTouchLocation = touches.first?.location(in: self.wordBubbleView), firstTouchLocation == previousLocation, stopWatchCounter.isAnimating else {
-            
+
             AudioAssisstant.shared.playSound(soundName: AudioFiles.bubblePop.rawValue, withFormat: AudioFormats.wav.rawValue)
-            
+            DispatchQueue.main.asyncAfter(deadline: .now() + Constants.burstAnimationDuration.rawValue, execute: {
+                AudioAssisstant.shared.stopSound()
+            })
             self.stopWatchCounter.stopAnimating()
             
-            if wordBubbleView.choiceLabel.text != correctAnswer {
+            if wordBubbleView.getChoiceText() != correctAnswer {
                 score.value = score.value + 1
-                print("swipe-Correct")
             } else {
                 score.value = score.value - 1
-                print("swipe-InCorrect")
             }
             updateScore()
             stopWatchCounter.finishAnimations()
@@ -183,12 +190,10 @@ extension GamePlayViewController {
         //logic for tapping the word bubble
         self.stopWatchCounter.stopAnimating()
         
-        if wordBubbleView.choiceLabel.text == correctAnswer {
+        if wordBubbleView.getChoiceText() == correctAnswer {
             self.score.value = self.score.value + 1
-            print("tap-Correct")
         } else {
             self.score.value = self.score.value - 1
-            print("tap-InCorrect")
         }
         updateScore()
         stopWatchCounter.finishAnimations()

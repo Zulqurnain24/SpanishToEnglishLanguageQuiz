@@ -22,6 +22,19 @@ class WordBubbleView: UIView {
         setupBurstAnimation()
     }
     
+    func getChoiceText() -> String {
+        guard let choiceText = choiceLabel.text as String? else { return "" }
+        return choiceText
+    }
+    
+    func setChoiceText(_ text: String) {
+        choiceLabel.text = text
+    }
+    
+    func setImage(_ imageURLString: String) {
+        imageView.image = UIImage(named: imageURLString)
+    }
+    
     func setupBurstAnimation() {
         let imgListArray :NSMutableArray = []
         for countValue in 1...3
@@ -37,7 +50,6 @@ class WordBubbleView: UIView {
     }
 
     func finishAnimations() {
-        AudioAssisstant.shared.stopSound()
         self.imageView.stopAnimating()
         self.layer.removeAllAnimations()
     }

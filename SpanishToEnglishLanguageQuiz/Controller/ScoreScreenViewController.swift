@@ -13,17 +13,23 @@ class ScoreScreenViewController: UIViewController {
     @IBOutlet weak var scoreValueDisplayView: UIView!
     @IBOutlet weak var nextButtonDisplayView: UIView!
     @IBOutlet weak var scoreDateDisplayView: UIView!
-    let scoreValueLabelView = Bundle.main.loadNibNamed("LabelView", owner: self, options: nil)?.last as! LabelView
-    let scoreDateDisplayLabelView = Bundle.main.loadNibNamed("LabelView", owner: self, options: nil)?.last as! LabelView
-    let buttonView = Bundle.main.loadNibNamed("ButtonView", owner: self, options: nil)?.last as! ButtonView
+    let scoreValueLabelView = Bundle.main.loadNibNamed(Nib.labelView.rawValue, owner: self, options: nil)?.last as! LabelView
+    let scoreDateDisplayLabelView = Bundle.main.loadNibNamed(Nib.labelView.rawValue, owner: self, options: nil)?.last as! LabelView
+    let buttonView = Bundle.main.loadNibNamed(Nib.buttonView.rawValue, owner: self, options: nil)?.last as! ButtonView
     var score: Score?
     var scoreViewModel: ScoreViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configure()
         initializeViewModel()
         setupView()
+    }
+    
+    func configure() {
+        self.title = Strings.ScoreScreenViewControllerTitle.rawValue
+        self.view.accessibilityIdentifier = Strings.ScoreScreenViewControllerAccessibilityIdentifier.rawValue
     }
     
     func initializeViewModel() {
@@ -50,10 +56,10 @@ class ScoreScreenViewController: UIViewController {
 
         guard let scoreViewModel = self.scoreViewModel as ScoreViewModel? else { return }
         
-        scoreValueLabelView.setText(text: "Score: \n" + scoreViewModel.value)
-        scoreDateDisplayLabelView.setText(text: "Date: \n" + scoreViewModel.date)
+        scoreValueLabelView.setText(Strings.scoreValuePrefix.rawValue + scoreViewModel.value)
+        scoreDateDisplayLabelView.setText(Strings.scoreDatePrefix.rawValue + scoreViewModel.date)
         scoreValueDisplayView.addSubview(scoreValueLabelView)
-        buttonView.setButtonTitle("Next")
+        buttonView.setButtonTitle(Strings.nextButtonTitle.rawValue)
         nextButtonDisplayView.addSubview(buttonView)
         scoreDateDisplayView.addSubview(scoreDateDisplayLabelView)
     }

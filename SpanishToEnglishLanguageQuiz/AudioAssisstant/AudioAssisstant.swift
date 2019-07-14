@@ -29,8 +29,6 @@ enum AudioFiles: String {
     
     case levelMusic1 = "levelMusic"
 
-    case alarm = "alarm"
-    
     case timerTick = "timerTick"
     
     case bubblePop = "bubblePop"
@@ -60,6 +58,10 @@ class AudioAssisstant: NSObject {
         } catch let error as NSError {
             print(error.description)
         }
+    }
+    
+    func pauseSound() {
+        player?.pause()
     }
     
     func stopSound() {

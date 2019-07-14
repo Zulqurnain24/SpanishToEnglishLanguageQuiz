@@ -37,11 +37,10 @@ class StopWatchCounter: UIImageView {
         }
         
         self.animationImages = imgListArray as? [UIImage];
-        self.animationDuration = TimeInterval(durationForStopWatch)
+        self.animationDuration = TimeInterval(durationForStopWatch + durationForAlarmBuzz)
     }
 
     func finishAnimations() {
-        AudioAssisstant.shared.stopSound()
         self.stopAnimating()
         self.layer.removeAllAnimations()
     }
@@ -49,8 +48,6 @@ class StopWatchCounter: UIImageView {
     func initiateAnimation( _ completionHandler: (() -> Void)? = nil) {
         self.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + durationForStopWatch, execute: {
-            AudioAssisstant.shared.playSound(soundName: AudioFiles.alarm.rawValue, withFormat: AudioFormats.wav.rawValue)
-            self.finishAnimations()
             guard completionHandler != nil else { return }
             completionHandler!()
         })

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660C727A22DB048A002D9CAA /* SpanishToEnglishLanguageQuiz_TestEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C727922DB048A002D9CAA /* SpanishToEnglishLanguageQuiz_TestEnums.swift */; };
 		6636B20622D9C53600D721C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B20522D9C53600D721C7 /* AppDelegate.swift */; };
 		6636B20822D9C53600D721C7 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B20722D9C53600D721C7 /* SplashScreenViewController.swift */; };
 		6636B20B22D9C53600D721C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6636B20922D9C53600D721C7 /* Main.storyboard */; };
@@ -15,86 +16,31 @@
 		6636B21B22D9C53700D721C7 /* SpanishToEnglishLanguageQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B21A22D9C53700D721C7 /* SpanishToEnglishLanguageQuizTests.swift */; };
 		6636B22622D9C53700D721C7 /* SpanishToEnglishLanguageQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B22522D9C53700D721C7 /* SpanishToEnglishLanguageQuizUITests.swift */; };
 		6636B23922D9C5E800D721C7 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B23822D9C5E800D721C7 /* TutorialViewController.swift */; };
-		6636B23A22D9C5E800D721C7 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B23822D9C5E800D721C7 /* TutorialViewController.swift */; };
-		6636B23B22D9C5E800D721C7 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B23822D9C5E800D721C7 /* TutorialViewController.swift */; };
 		6636B23D22D9C62A00D721C7 /* QuizTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B23C22D9C62A00D721C7 /* QuizTypeSelectionViewController.swift */; };
-		6636B23E22D9C62A00D721C7 /* QuizTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B23C22D9C62A00D721C7 /* QuizTypeSelectionViewController.swift */; };
-		6636B23F22D9C62A00D721C7 /* QuizTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B23C22D9C62A00D721C7 /* QuizTypeSelectionViewController.swift */; };
 		6636B24122D9C64E00D721C7 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B24022D9C64E00D721C7 /* GamePlayViewController.swift */; };
-		6636B24222D9C64E00D721C7 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B24022D9C64E00D721C7 /* GamePlayViewController.swift */; };
-		6636B24322D9C64E00D721C7 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B24022D9C64E00D721C7 /* GamePlayViewController.swift */; };
 		6636B24522D9C66300D721C7 /* ScoreScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B24422D9C66300D721C7 /* ScoreScreenViewController.swift */; };
-		6636B24622D9C66300D721C7 /* ScoreScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B24422D9C66300D721C7 /* ScoreScreenViewController.swift */; };
-		6636B24722D9C66300D721C7 /* ScoreScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B24422D9C66300D721C7 /* ScoreScreenViewController.swift */; };
 		6636B24922D9C8B300D721C7 /* WordBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B24822D9C8B300D721C7 /* WordBubbleView.swift */; };
-		6636B24A22D9C8B300D721C7 /* WordBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B24822D9C8B300D721C7 /* WordBubbleView.swift */; };
-		6636B24B22D9C8B300D721C7 /* WordBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B24822D9C8B300D721C7 /* WordBubbleView.swift */; };
 		6636B24D22D9C8CB00D721C7 /* WordBubbleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B24C22D9C8CB00D721C7 /* WordBubbleView.xib */; };
-		6636B24E22D9C8CB00D721C7 /* WordBubbleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B24C22D9C8CB00D721C7 /* WordBubbleView.xib */; };
-		6636B24F22D9C8CB00D721C7 /* WordBubbleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B24C22D9C8CB00D721C7 /* WordBubbleView.xib */; };
 		6636B25122D9D44200D721C7 /* GameRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B25022D9D44200D721C7 /* GameRouteViewController.swift */; };
-		6636B25222D9D44200D721C7 /* GameRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B25022D9D44200D721C7 /* GameRouteViewController.swift */; };
-		6636B25322D9D44200D721C7 /* GameRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B25022D9D44200D721C7 /* GameRouteViewController.swift */; };
 		6636B25D22D9D6C700D721C7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B25C22D9D6C700D721C7 /* ButtonView.swift */; };
-		6636B25E22D9D6C700D721C7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B25C22D9D6C700D721C7 /* ButtonView.swift */; };
-		6636B25F22D9D6C700D721C7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B25C22D9D6C700D721C7 /* ButtonView.swift */; };
 		6636B26122D9D6DB00D721C7 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B26022D9D6DB00D721C7 /* ButtonView.xib */; };
-		6636B26222D9D6DB00D721C7 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B26022D9D6DB00D721C7 /* ButtonView.xib */; };
-		6636B26322D9D6DB00D721C7 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B26022D9D6DB00D721C7 /* ButtonView.xib */; };
 		6636B26522D9D7D900D721C7 /* StopWatchCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B26422D9D7D900D721C7 /* StopWatchCounter.swift */; };
-		6636B26622D9D7D900D721C7 /* StopWatchCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B26422D9D7D900D721C7 /* StopWatchCounter.swift */; };
-		6636B26722D9D7D900D721C7 /* StopWatchCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B26422D9D7D900D721C7 /* StopWatchCounter.swift */; };
 		6636B26922D9D85200D721C7 /* StopWatchCounter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B26822D9D85200D721C7 /* StopWatchCounter.xib */; };
-		6636B26A22D9D85200D721C7 /* StopWatchCounter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B26822D9D85200D721C7 /* StopWatchCounter.xib */; };
-		6636B26B22D9D85200D721C7 /* StopWatchCounter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B26822D9D85200D721C7 /* StopWatchCounter.xib */; };
 		6636B26D22D9D8D500D721C7 /* TutorialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B26C22D9D8D500D721C7 /* TutorialImageView.swift */; };
-		6636B26E22D9D8D500D721C7 /* TutorialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B26C22D9D8D500D721C7 /* TutorialImageView.swift */; };
-		6636B26F22D9D8D500D721C7 /* TutorialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B26C22D9D8D500D721C7 /* TutorialImageView.swift */; };
 		6636B27122D9D90700D721C7 /* TutorialImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B27022D9D90700D721C7 /* TutorialImageView.xib */; };
-		6636B27222D9D90700D721C7 /* TutorialImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B27022D9D90700D721C7 /* TutorialImageView.xib */; };
-		6636B27322D9D90700D721C7 /* TutorialImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B27022D9D90700D721C7 /* TutorialImageView.xib */; };
 		6636B27522D9D94100D721C7 /* SplashScreenImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B27422D9D94100D721C7 /* SplashScreenImageView.xib */; };
-		6636B27622D9D94100D721C7 /* SplashScreenImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B27422D9D94100D721C7 /* SplashScreenImageView.xib */; };
-		6636B27722D9D94100D721C7 /* SplashScreenImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B27422D9D94100D721C7 /* SplashScreenImageView.xib */; };
 		6636B27922D9D95D00D721C7 /* SplashScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B27822D9D95D00D721C7 /* SplashScreenImageView.swift */; };
-		6636B27A22D9D95D00D721C7 /* SplashScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B27822D9D95D00D721C7 /* SplashScreenImageView.swift */; };
-		6636B27B22D9D95D00D721C7 /* SplashScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B27822D9D95D00D721C7 /* SplashScreenImageView.swift */; };
 		6636B27E22D9DF5000D721C7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B27D22D9DF5000D721C7 /* Enums.swift */; };
-		6636B27F22D9DF5000D721C7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B27D22D9DF5000D721C7 /* Enums.swift */; };
-		6636B28022D9DF5000D721C7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B27D22D9DF5000D721C7 /* Enums.swift */; };
 		6636B28222D9EA0F00D721C7 /* QuizDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B28122D9EA0F00D721C7 /* QuizDataSource.swift */; };
-		6636B28322D9EA0F00D721C7 /* QuizDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B28122D9EA0F00D721C7 /* QuizDataSource.swift */; };
-		6636B28422D9EA0F00D721C7 /* QuizDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B28122D9EA0F00D721C7 /* QuizDataSource.swift */; };
 		6636B28622D9EC2400D721C7 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 6636B28522D9EC2400D721C7 /* words.json */; };
-		6636B28722D9EC2400D721C7 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 6636B28522D9EC2400D721C7 /* words.json */; };
-		6636B28822D9EC2400D721C7 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 6636B28522D9EC2400D721C7 /* words.json */; };
 		6636B28E22D9F06100D721C7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B28D22D9F06100D721C7 /* Configuration.swift */; };
-		6636B28F22D9F06100D721C7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B28D22D9F06100D721C7 /* Configuration.swift */; };
-		6636B29022D9F06100D721C7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B28D22D9F06100D721C7 /* Configuration.swift */; };
 		6636B29222D9F43C00D721C7 /* ScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B29122D9F43C00D721C7 /* ScoreDataSource.swift */; };
-		6636B29322D9F43C00D721C7 /* ScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B29122D9F43C00D721C7 /* ScoreDataSource.swift */; };
-		6636B29422D9F43C00D721C7 /* ScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B29122D9F43C00D721C7 /* ScoreDataSource.swift */; };
 		6636B29622DA08DC00D721C7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B29522DA08DC00D721C7 /* QuestionView.swift */; };
-		6636B29722DA08DC00D721C7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B29522DA08DC00D721C7 /* QuestionView.swift */; };
-		6636B29822DA08DC00D721C7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B29522DA08DC00D721C7 /* QuestionView.swift */; };
 		6636B29A22DA08E900D721C7 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B29922DA08E900D721C7 /* QuestionView.xib */; };
-		6636B29B22DA08E900D721C7 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B29922DA08E900D721C7 /* QuestionView.xib */; };
-		6636B29C22DA08E900D721C7 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B29922DA08E900D721C7 /* QuestionView.xib */; };
 		6636B2A322DA1B7A00D721C7 /* AudioAssisstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B2A222DA1B7A00D721C7 /* AudioAssisstant.swift */; };
-		6636B2A422DA1B7A00D721C7 /* AudioAssisstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B2A222DA1B7A00D721C7 /* AudioAssisstant.swift */; };
-		6636B2A522DA1B7A00D721C7 /* AudioAssisstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B2A222DA1B7A00D721C7 /* AudioAssisstant.swift */; };
 		6636B2AE22DA1BD400D721C7 /* loose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2A822DA1BD300D721C7 /* loose.wav */; };
-		6636B2AF22DA1BD400D721C7 /* loose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2A822DA1BD300D721C7 /* loose.wav */; };
-		6636B2B022DA1BD400D721C7 /* loose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2A822DA1BD300D721C7 /* loose.wav */; };
 		6636B2B122DA1BD400D721C7 /* timerTick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2A922DA1BD400D721C7 /* timerTick.wav */; };
-		6636B2B222DA1BD400D721C7 /* timerTick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2A922DA1BD400D721C7 /* timerTick.wav */; };
-		6636B2B322DA1BD400D721C7 /* timerTick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2A922DA1BD400D721C7 /* timerTick.wav */; };
 		6636B2B422DA1BD400D721C7 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2AA22DA1BD400D721C7 /* win.wav */; };
-		6636B2B522DA1BD400D721C7 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2AA22DA1BD400D721C7 /* win.wav */; };
-		6636B2B622DA1BD400D721C7 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2AA22DA1BD400D721C7 /* win.wav */; };
-		6636B2B822DA27BA00D721C7 /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2B722DA27BA00D721C7 /* alarm.wav */; };
-		6636B2B922DA27BA00D721C7 /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2B722DA27BA00D721C7 /* alarm.wav */; };
-		6636B2BA22DA27BA00D721C7 /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2B722DA27BA00D721C7 /* alarm.wav */; };
 		663F6D7C22DA4CD4008BC94C /* GamePlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6D7B22DA4CD4008BC94C /* GamePlayViewModel.swift */; };
 		663F6D7E22DA513C008BC94C /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6D7D22DA513C008BC94C /* ScoreView.swift */; };
 		663F6D8022DA5147008BC94C /* ScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663F6D7F22DA5147008BC94C /* ScoreView.xib */; };
@@ -105,6 +51,11 @@
 		663F6D8C22DA9855008BC94C /* InstructorCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663F6D8B22DA9855008BC94C /* InstructorCommentView.xib */; };
 		663F6D8E22DAA906008BC94C /* bubblePop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 663F6D8D22DAA906008BC94C /* bubblePop.wav */; };
 		663F6D9022DAB80C008BC94C /* levelMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 663F6D8F22DAB80C008BC94C /* levelMusic.mp3 */; };
+		66A3833B22DB1B8C00D0E31C /* SpanishToEnglishLanguage_TestViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3833A22DB1B8C00D0E31C /* SpanishToEnglishLanguage_TestViews.swift */; };
+		66A3833D22DB2CAF00D0E31C /* SpanishToEnglishLanguageQuiz_TestViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3833C22DB2CAF00D0E31C /* SpanishToEnglishLanguageQuiz_TestViewControllers.swift */; };
+		66A3833F22DB359700D0E31C /* SpanishToEnglishLanguageQuiz_TestDatasources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3833E22DB359700D0E31C /* SpanishToEnglishLanguageQuiz_TestDatasources.swift */; };
+		66A3834122DB37F000D0E31C /* SpanishToEnglishLanguageQuiz_TestViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3834022DB37F000D0E31C /* SpanishToEnglishLanguageQuiz_TestViewModels.swift */; };
+		66A3834322DB3B2D00D0E31C /* SpanishToEnglishLanguageQuiz_UITestViewcontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3834222DB3B2D00D0E31C /* SpanishToEnglishLanguageQuiz_UITestViewcontrollers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		660C727922DB048A002D9CAA /* SpanishToEnglishLanguageQuiz_TestEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishToEnglishLanguageQuiz_TestEnums.swift; sourceTree = "<group>"; };
 		6636B20222D9C53600D721C7 /* SpanishToEnglishLanguageQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpanishToEnglishLanguageQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6636B20522D9C53600D721C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6636B20722D9C53600D721C7 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -164,7 +116,6 @@
 		6636B2A822DA1BD300D721C7 /* loose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loose.wav; sourceTree = "<group>"; };
 		6636B2A922DA1BD400D721C7 /* timerTick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = timerTick.wav; sourceTree = "<group>"; };
 		6636B2AA22DA1BD400D721C7 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
-		6636B2B722DA27BA00D721C7 /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm.wav; sourceTree = "<group>"; };
 		663F6D7B22DA4CD4008BC94C /* GamePlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewModel.swift; sourceTree = "<group>"; };
 		663F6D7D22DA513C008BC94C /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		663F6D7F22DA5147008BC94C /* ScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreView.xib; sourceTree = "<group>"; };
@@ -175,6 +126,11 @@
 		663F6D8B22DA9855008BC94C /* InstructorCommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructorCommentView.xib; sourceTree = "<group>"; };
 		663F6D8D22DAA906008BC94C /* bubblePop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubblePop.wav; sourceTree = "<group>"; };
 		663F6D8F22DAB80C008BC94C /* levelMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelMusic.mp3; sourceTree = "<group>"; };
+		66A3833A22DB1B8C00D0E31C /* SpanishToEnglishLanguage_TestViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishToEnglishLanguage_TestViews.swift; sourceTree = "<group>"; };
+		66A3833C22DB2CAF00D0E31C /* SpanishToEnglishLanguageQuiz_TestViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishToEnglishLanguageQuiz_TestViewControllers.swift; sourceTree = "<group>"; };
+		66A3833E22DB359700D0E31C /* SpanishToEnglishLanguageQuiz_TestDatasources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishToEnglishLanguageQuiz_TestDatasources.swift; sourceTree = "<group>"; };
+		66A3834022DB37F000D0E31C /* SpanishToEnglishLanguageQuiz_TestViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishToEnglishLanguageQuiz_TestViewModels.swift; sourceTree = "<group>"; };
+		66A3834222DB3B2D00D0E31C /* SpanishToEnglishLanguageQuiz_UITestViewcontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishToEnglishLanguageQuiz_UITestViewcontrollers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +202,11 @@
 			children = (
 				6636B21A22D9C53700D721C7 /* SpanishToEnglishLanguageQuizTests.swift */,
 				6636B21C22D9C53700D721C7 /* Info.plist */,
+				660C727922DB048A002D9CAA /* SpanishToEnglishLanguageQuiz_TestEnums.swift */,
+				66A3833A22DB1B8C00D0E31C /* SpanishToEnglishLanguage_TestViews.swift */,
+				66A3833C22DB2CAF00D0E31C /* SpanishToEnglishLanguageQuiz_TestViewControllers.swift */,
+				66A3833E22DB359700D0E31C /* SpanishToEnglishLanguageQuiz_TestDatasources.swift */,
+				66A3834022DB37F000D0E31C /* SpanishToEnglishLanguageQuiz_TestViewModels.swift */,
 			);
 			path = SpanishToEnglishLanguageQuizTests;
 			sourceTree = "<group>";
@@ -255,6 +216,7 @@
 			children = (
 				6636B22522D9C53700D721C7 /* SpanishToEnglishLanguageQuizUITests.swift */,
 				6636B22722D9C53700D721C7 /* Info.plist */,
+				66A3834222DB3B2D00D0E31C /* SpanishToEnglishLanguageQuiz_UITestViewcontrollers.swift */,
 			);
 			path = SpanishToEnglishLanguageQuizUITests;
 			sourceTree = "<group>";
@@ -347,7 +309,6 @@
 				663F6D8F22DAB80C008BC94C /* levelMusic.mp3 */,
 				663F6D8D22DAA906008BC94C /* bubblePop.wav */,
 				6636B2AA22DA1BD400D721C7 /* win.wav */,
-				6636B2B722DA27BA00D721C7 /* alarm.wav */,
 				6636B2A822DA1BD300D721C7 /* loose.wav */,
 				6636B2A922DA1BD400D721C7 /* timerTick.wav */,
 			);
@@ -465,7 +426,6 @@
 				6636B21022D9C53700D721C7 /* LaunchScreen.storyboard in Resources */,
 				663F6D8022DA5147008BC94C /* ScoreView.xib in Resources */,
 				663F6D8E22DAA906008BC94C /* bubblePop.wav in Resources */,
-				6636B2B822DA27BA00D721C7 /* alarm.wav in Resources */,
 				6636B20D22D9C53700D721C7 /* Assets.xcassets in Resources */,
 				6636B27522D9D94100D721C7 /* SplashScreenImageView.xib in Resources */,
 				663F6D9022DAB80C008BC94C /* levelMusic.mp3 in Resources */,
@@ -484,17 +444,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6636B27222D9D90700D721C7 /* TutorialImageView.xib in Resources */,
-				6636B2B222DA1BD400D721C7 /* timerTick.wav in Resources */,
-				6636B2B922DA27BA00D721C7 /* alarm.wav in Resources */,
-				6636B26A22D9D85200D721C7 /* StopWatchCounter.xib in Resources */,
-				6636B29B22DA08E900D721C7 /* QuestionView.xib in Resources */,
-				6636B26222D9D6DB00D721C7 /* ButtonView.xib in Resources */,
-				6636B2AF22DA1BD400D721C7 /* loose.wav in Resources */,
-				6636B2B522DA1BD400D721C7 /* win.wav in Resources */,
-				6636B28722D9EC2400D721C7 /* words.json in Resources */,
-				6636B24E22D9C8CB00D721C7 /* WordBubbleView.xib in Resources */,
-				6636B27622D9D94100D721C7 /* SplashScreenImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,17 +451,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6636B27322D9D90700D721C7 /* TutorialImageView.xib in Resources */,
-				6636B2B322DA1BD400D721C7 /* timerTick.wav in Resources */,
-				6636B2BA22DA27BA00D721C7 /* alarm.wav in Resources */,
-				6636B26B22D9D85200D721C7 /* StopWatchCounter.xib in Resources */,
-				6636B29C22DA08E900D721C7 /* QuestionView.xib in Resources */,
-				6636B26322D9D6DB00D721C7 /* ButtonView.xib in Resources */,
-				6636B2B022DA1BD400D721C7 /* loose.wav in Resources */,
-				6636B2B622DA1BD400D721C7 /* win.wav in Resources */,
-				6636B28822D9EC2400D721C7 /* words.json in Resources */,
-				6636B24F22D9C8CB00D721C7 /* WordBubbleView.xib in Resources */,
-				6636B27722D9D94100D721C7 /* SplashScreenImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,23 +491,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6636B29722DA08DC00D721C7 /* QuestionView.swift in Sources */,
-				6636B24A22D9C8B300D721C7 /* WordBubbleView.swift in Sources */,
-				6636B2A422DA1B7A00D721C7 /* AudioAssisstant.swift in Sources */,
-				6636B23E22D9C62A00D721C7 /* QuizTypeSelectionViewController.swift in Sources */,
-				6636B28F22D9F06100D721C7 /* Configuration.swift in Sources */,
-				6636B26622D9D7D900D721C7 /* StopWatchCounter.swift in Sources */,
-				6636B23A22D9C5E800D721C7 /* TutorialViewController.swift in Sources */,
-				6636B25E22D9D6C700D721C7 /* ButtonView.swift in Sources */,
-				6636B24222D9C64E00D721C7 /* GamePlayViewController.swift in Sources */,
-				6636B28322D9EA0F00D721C7 /* QuizDataSource.swift in Sources */,
-				6636B26E22D9D8D500D721C7 /* TutorialImageView.swift in Sources */,
-				6636B29322D9F43C00D721C7 /* ScoreDataSource.swift in Sources */,
-				6636B25222D9D44200D721C7 /* GameRouteViewController.swift in Sources */,
-				6636B24622D9C66300D721C7 /* ScoreScreenViewController.swift in Sources */,
+				66A3834122DB37F000D0E31C /* SpanishToEnglishLanguageQuiz_TestViewModels.swift in Sources */,
+				66A3833F22DB359700D0E31C /* SpanishToEnglishLanguageQuiz_TestDatasources.swift in Sources */,
+				660C727A22DB048A002D9CAA /* SpanishToEnglishLanguageQuiz_TestEnums.swift in Sources */,
+				66A3833B22DB1B8C00D0E31C /* SpanishToEnglishLanguage_TestViews.swift in Sources */,
+				66A3833D22DB2CAF00D0E31C /* SpanishToEnglishLanguageQuiz_TestViewControllers.swift in Sources */,
 				6636B21B22D9C53700D721C7 /* SpanishToEnglishLanguageQuizTests.swift in Sources */,
-				6636B27F22D9DF5000D721C7 /* Enums.swift in Sources */,
-				6636B27A22D9D95D00D721C7 /* SplashScreenImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,23 +504,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6636B29822DA08DC00D721C7 /* QuestionView.swift in Sources */,
-				6636B24B22D9C8B300D721C7 /* WordBubbleView.swift in Sources */,
-				6636B2A522DA1B7A00D721C7 /* AudioAssisstant.swift in Sources */,
-				6636B23F22D9C62A00D721C7 /* QuizTypeSelectionViewController.swift in Sources */,
-				6636B29022D9F06100D721C7 /* Configuration.swift in Sources */,
-				6636B26722D9D7D900D721C7 /* StopWatchCounter.swift in Sources */,
-				6636B23B22D9C5E800D721C7 /* TutorialViewController.swift in Sources */,
-				6636B25F22D9D6C700D721C7 /* ButtonView.swift in Sources */,
-				6636B24322D9C64E00D721C7 /* GamePlayViewController.swift in Sources */,
-				6636B28422D9EA0F00D721C7 /* QuizDataSource.swift in Sources */,
-				6636B26F22D9D8D500D721C7 /* TutorialImageView.swift in Sources */,
-				6636B29422D9F43C00D721C7 /* ScoreDataSource.swift in Sources */,
-				6636B25322D9D44200D721C7 /* GameRouteViewController.swift in Sources */,
-				6636B24722D9C66300D721C7 /* ScoreScreenViewController.swift in Sources */,
+				66A3834322DB3B2D00D0E31C /* SpanishToEnglishLanguageQuiz_UITestViewcontrollers.swift in Sources */,
 				6636B22622D9C53700D721C7 /* SpanishToEnglishLanguageQuizUITests.swift in Sources */,
-				6636B28022D9DF5000D721C7 /* Enums.swift in Sources */,
-				6636B27B22D9D95D00D721C7 /* SplashScreenImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,6 +702,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
 				INFOPLIST_FILE = SpanishToEnglishLanguageQuizTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -810,6 +723,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
 				INFOPLIST_FILE = SpanishToEnglishLanguageQuizTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -829,6 +743,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
 				INFOPLIST_FILE = SpanishToEnglishLanguageQuizUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -848,6 +763,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
 				INFOPLIST_FILE = SpanishToEnglishLanguageQuizUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

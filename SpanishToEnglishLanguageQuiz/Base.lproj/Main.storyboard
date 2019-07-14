@@ -13,7 +13,7 @@
         <!--Splash Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SplashScreenViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashScreenViewController" id="BYZ-38-t0r" customClass="SplashScreenViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
         <!--Tutorial-->
         <scene sceneID="i3N-fr-euj">
             <objects>
-                <viewController title="Tutorial" id="dPd-9U-3lg" customClass="TutorialViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="TutorialViewController" storyboardIdentifier="TutorialViewController" title="Tutorial" id="dPd-9U-3lg" customClass="TutorialViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YKj-fj-YAl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +105,7 @@
         <!--Game Play View Controller-->
         <scene sceneID="fb6-WG-7I4">
             <objects>
-                <viewController id="bM1-Ob-PD7" customClass="GamePlayViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="GamePlayViewController" storyboardIdentifier="GamePlayViewController" id="bM1-Ob-PD7" customClass="GamePlayViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G4a-T3-i9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,15 +128,28 @@
                                     <constraint firstAttribute="height" constant="76" id="uIQ-NV-iz2"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OY-BP-GtH">
-                                <rect key="frame" x="0.0" y="363" width="414" height="265"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cMR-Ba-fBs">
+                                <rect key="frame" x="0.0" y="297" width="414" height="452"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OY-BP-GtH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="352"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oa-uH-0vp">
+                                        <rect key="frame" x="82" y="382" width="250" height="70"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="9G2-5E-otZ"/>
+                                            <constraint firstAttribute="width" constant="250" id="Ra0-1i-bOi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="265" id="bIU-0Y-U1g"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="207" id="dl9-pe-cAw"/>
-                                    <constraint firstAttribute="width" constant="414" id="zOB-vc-gc2"/>
+                                    <constraint firstItem="3oa-uH-0vp" firstAttribute="leading" secondItem="cMR-Ba-fBs" secondAttribute="leading" constant="82" id="2t0-DP-3PO"/>
+                                    <constraint firstItem="1OY-BP-GtH" firstAttribute="leading" secondItem="cMR-Ba-fBs" secondAttribute="leading" id="qZ0-0H-GsR"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwJ-9j-ngT">
                                 <rect key="frame" x="100" y="-214" width="250" height="250"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -146,32 +159,19 @@
                                     <constraint firstAttribute="width" constant="250" id="TC5-yN-SOj"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oa-uH-0vp">
-                                <rect key="frame" x="82" y="715" width="250" height="70"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="HaA-fz-8Xv"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="dxE-wY-qr8"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="o2n-Wj-tkK"/>
-                                    <constraint firstAttribute="width" constant="250" id="qvS-ZD-rRQ"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1OY-BP-GtH" firstAttribute="centerY" secondItem="G4a-T3-i9J" secondAttribute="centerY" constant="47.5" id="1ae-HN-xiS"/>
                             <constraint firstItem="GwJ-9j-ngT" firstAttribute="top" secondItem="YlR-v8-NZO" secondAttribute="top" constant="-258" id="4q4-77-Kod"/>
                             <constraint firstItem="luP-3x-bcB" firstAttribute="top" secondItem="YlR-v8-NZO" secondAttribute="top" constant="73" id="CQa-rA-iR4"/>
                             <constraint firstItem="hVr-pj-OJ4" firstAttribute="top" secondItem="YlR-v8-NZO" secondAttribute="top" constant="73" id="Heu-oX-55S"/>
-                            <constraint firstItem="3oa-uH-0vp" firstAttribute="top" secondItem="1OY-BP-GtH" secondAttribute="bottom" constant="87" id="S72-Wf-5Ei"/>
+                            <constraint firstItem="cMR-Ba-fBs" firstAttribute="leading" secondItem="G4a-T3-i9J" secondAttribute="leading" id="NDg-Sj-MGT"/>
+                            <constraint firstItem="cMR-Ba-fBs" firstAttribute="top" secondItem="hVr-pj-OJ4" secondAttribute="bottom" constant="50" id="Yvi-2O-QHN"/>
                             <constraint firstItem="hVr-pj-OJ4" firstAttribute="leading" secondItem="YlR-v8-NZO" secondAttribute="leading" constant="20" id="aum-ex-nu7"/>
                             <constraint firstItem="luP-3x-bcB" firstAttribute="trailing" secondItem="YlR-v8-NZO" secondAttribute="trailing" constant="-20" id="emq-bc-xKa"/>
-                            <constraint firstItem="1OY-BP-GtH" firstAttribute="centerX" secondItem="G4a-T3-i9J" secondAttribute="centerX" id="nug-kM-Q80"/>
-                            <constraint firstItem="YlR-v8-NZO" firstAttribute="bottom" secondItem="3oa-uH-0vp" secondAttribute="bottom" constant="77" id="rgr-UJ-2WN"/>
+                            <constraint firstItem="YlR-v8-NZO" firstAttribute="trailing" secondItem="cMR-Ba-fBs" secondAttribute="trailing" id="mDO-oa-WQd"/>
+                            <constraint firstItem="YlR-v8-NZO" firstAttribute="bottom" secondItem="cMR-Ba-fBs" secondAttribute="bottom" constant="113" id="oac-8l-rX5"/>
                             <constraint firstAttribute="trailing" secondItem="GwJ-9j-ngT" secondAttribute="trailing" constant="64" id="rno-Il-1te"/>
-                            <constraint firstItem="3oa-uH-0vp" firstAttribute="trailing" secondItem="YlR-v8-NZO" secondAttribute="trailing" constant="-82" id="skb-36-6Iw"/>
-                            <constraint firstItem="3oa-uH-0vp" firstAttribute="leading" secondItem="YlR-v8-NZO" secondAttribute="leading" constant="82" id="yeF-po-xyO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YlR-v8-NZO"/>
                     </view>
@@ -192,7 +192,7 @@
         <!--Score Screen View Controller-->
         <scene sceneID="mgT-gG-isB">
             <objects>
-                <viewController id="fhr-bi-v4E" customClass="ScoreScreenViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ScoreScreenViewController" storyboardIdentifier="ScoreScreenViewController" id="fhr-bi-v4E" customClass="ScoreScreenViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iZe-81-BF4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,7 +251,7 @@
         <!--Select Quiz Type-->
         <scene sceneID="qYR-pQ-8r0">
             <objects>
-                <viewController title="Select Quiz Type" id="D0E-Hc-Odw" customClass="QuizTypeSelectionViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="QuizTypeSelectionViewController" storyboardIdentifier="QuizTypeSelectionViewController" title="Select Quiz Type" id="D0E-Hc-Odw" customClass="QuizTypeSelectionViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c6U-1d-9uQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,26 +259,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVl-b2-bpr">
                                 <rect key="frame" x="0.0" y="274" width="406" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spanish To English" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-MS-8cO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spanish To English" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-MS-8cO">
                                         <rect key="frame" x="232" y="0.0" width="174" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English To Spanish" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iY-8G-Axk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English To Spanish" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iY-8G-Axk">
                                         <rect key="frame" x="0.0" y="0.0" width="167" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="167" id="wQt-tE-VvF"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bKp-au-a24">
-                                        <rect key="frame" x="175" y="35" width="51" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bKp-au-a24">
+                                        <rect key="frame" x="175" y="34.5" width="51" height="31"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="isQuizTypeSpanishToggleSwitch"/>
                                         <color key="tintColor" red="0.96080166099999997" green="0.61904931880000003" blue="0.067780633820000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="onTintColor" red="0.96080166099999997" green="0.61904931880000003" blue="0.067780633820000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="isQuizTypeSpanishToggleSwitch"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="toggleQuizType:" destination="D0E-Hc-Odw" eventType="valueChanged" id="kp7-Zk-lzV"/>
                                         </connections>
@@ -287,6 +291,15 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="2Li-f2-Qrn"/>
+                                    <constraint firstAttribute="bottom" secondItem="c2D-MS-8cO" secondAttribute="bottom" id="5Cw-PA-wwh"/>
+                                    <constraint firstItem="c2D-MS-8cO" firstAttribute="top" secondItem="lVl-b2-bpr" secondAttribute="top" id="8fm-jf-Q7w"/>
+                                    <constraint firstItem="2iY-8G-Axk" firstAttribute="top" secondItem="lVl-b2-bpr" secondAttribute="top" id="EwK-9B-dWI"/>
+                                    <constraint firstItem="c2D-MS-8cO" firstAttribute="leading" secondItem="bKp-au-a24" secondAttribute="trailing" constant="8" id="GpN-Bv-daB"/>
+                                    <constraint firstItem="2iY-8G-Axk" firstAttribute="leading" secondItem="lVl-b2-bpr" secondAttribute="leading" id="RDM-mM-S7c"/>
+                                    <constraint firstAttribute="trailing" secondItem="c2D-MS-8cO" secondAttribute="trailing" id="jlK-uh-FSj"/>
+                                    <constraint firstAttribute="bottom" secondItem="2iY-8G-Axk" secondAttribute="bottom" id="w1e-w1-XXq"/>
+                                    <constraint firstItem="bKp-au-a24" firstAttribute="leading" secondItem="2iY-8G-Axk" secondAttribute="trailing" constant="8" id="ype-xR-IRl"/>
+                                    <constraint firstItem="2iY-8G-Axk" firstAttribute="centerY" secondItem="bKp-au-a24" secondAttribute="centerY" id="zda-LT-KaC"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g33-A5-QD8">
@@ -324,7 +337,7 @@
         <!--Game Route View Controller-->
         <scene sceneID="foJ-2O-JgF">
             <objects>
-                <viewController id="gZn-rT-2ZD" customClass="GameRouteViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="GameRouteViewController" storyboardIdentifier="GameRouteViewController" id="gZn-rT-2ZD" customClass="GameRouteViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8z5-RT-YL1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,6 +402,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="wHO-fw-LRn"/>
-        <segue reference="ZQm-AU-Nh8"/>
+        <segue reference="uau-G8-viN"/>
     </inferredMetricsTieBreakers>
 </document>

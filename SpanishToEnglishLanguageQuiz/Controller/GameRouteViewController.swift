@@ -11,22 +11,27 @@ import UIKit
 class GameRouteViewController: UIViewController {
     @IBOutlet weak var buttonViewForQuizSelect: UIView!
     @IBOutlet weak var instructorCommentDisplayView: UIView!
-    
     @IBOutlet weak var buttonViewForPlayGameAgain: UIView!
 
-    let quizSelectButtonView = Bundle.main.loadNibNamed("ButtonView", owner: self, options: nil)?.last as! ButtonView
+    let quizSelectButtonView = Bundle.main.loadNibNamed(Nib.buttonView.rawValue, owner: self, options: nil)?.last as! ButtonView
     
     
-    let playGameAgainButtonView = Bundle.main.loadNibNamed("ButtonView", owner: self, options: nil)?.last as! ButtonView
+    let playGameAgainButtonView = Bundle.main.loadNibNamed(Nib.buttonView.rawValue, owner: self, options: nil)?.last as! ButtonView
     
-    let instructorCommentView = Bundle.main.loadNibNamed("InstructorCommentView", owner: self, options: nil)?.last as! InstructorCommentView
+    let instructorCommentView = Bundle.main.loadNibNamed(Nib.instructorCommentView.rawValue, owner: self, options: nil)?.last as! InstructorCommentView
     
     var isScoreHigh: Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        configure() 
         setupView()
+    }
+    
+    func configure() {
+        self.title = Strings.GameRouteViewControllerTitle.rawValue
+        self.view.accessibilityIdentifier = Strings.GameRouteViewControllerAccessibilityIdentifier.rawValue
     }
     
     func performSegueToQuizSelectViewController() {

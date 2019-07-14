@@ -15,6 +15,10 @@ class SplashScreenImageView: UIImageView {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+       configureAnimation()
+    }
+    
+    func configureAnimation() {
         let imgListArray :NSMutableArray = []
         for countValue in 0...7
         {

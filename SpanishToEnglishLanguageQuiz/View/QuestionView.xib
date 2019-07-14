@@ -16,46 +16,56 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="186"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19U-S3-MW4">
-                    <rect key="frame" x="20" y="73" width="374" height="113"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkJ-br-48V">
+                    <rect key="frame" x="14" y="14" width="386" height="158"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19U-S3-MW4">
+                            <rect key="frame" x="8" y="66" width="374" height="82"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="82" id="TbG-dC-uS8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <color key="textColor" red="0.96080166099999997" green="0.61904931880000003" blue="0.067780633820000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap if choice is correct or swipe if it is wrong" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qy6-zI-eQT">
+                            <rect key="frame" x="8" y="10" width="374" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="d7W-Rv-MnC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                            <color key="textColor" red="0.26004756971598586" green="0.6514326357837581" blue="0.96080166101455688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="113" id="TbG-dC-uS8"/>
+                        <constraint firstAttribute="trailing" secondItem="Qy6-zI-eQT" secondAttribute="trailing" constant="4" id="3o3-8z-g4M"/>
+                        <constraint firstItem="Qy6-zI-eQT" firstAttribute="leading" secondItem="pkJ-br-48V" secondAttribute="leading" constant="8" id="Gdw-Cu-bsn"/>
+                        <constraint firstItem="19U-S3-MW4" firstAttribute="width" secondItem="Qy6-zI-eQT" secondAttribute="width" id="f2j-hD-GJs"/>
+                        <constraint firstItem="Qy6-zI-eQT" firstAttribute="top" secondItem="pkJ-br-48V" secondAttribute="top" constant="10" id="pt8-1k-asS"/>
+                        <constraint firstItem="Qy6-zI-eQT" firstAttribute="leading" secondItem="19U-S3-MW4" secondAttribute="leading" id="rzU-MV-zbY"/>
+                        <constraint firstItem="19U-S3-MW4" firstAttribute="top" secondItem="Qy6-zI-eQT" secondAttribute="bottom" constant="8" id="uHf-5Z-O9u"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
-                    <color key="textColor" red="0.96080166099999997" green="0.61904931880000003" blue="0.067780633820000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap if choice is correct or swipe if it is wrong" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qy6-zI-eQT">
-                    <rect key="frame" x="20" y="17" width="374" height="48"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="d7W-Rv-MnC"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                    <color key="textColor" red="0.26004756971598586" green="0.6514326357837581" blue="0.96080166101455688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Qy6-zI-eQT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="0Zw-uW-Zwt"/>
-                <constraint firstItem="19U-S3-MW4" firstAttribute="width" secondItem="Qy6-zI-eQT" secondAttribute="width" id="2Yp-vu-gzr"/>
-                <constraint firstAttribute="bottom" secondItem="19U-S3-MW4" secondAttribute="bottom" id="96p-oR-zdP"/>
-                <constraint firstItem="Qy6-zI-eQT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="H5U-U1-RqA"/>
-                <constraint firstItem="19U-S3-MW4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="TIO-su-sry"/>
-                <constraint firstItem="19U-S3-MW4" firstAttribute="top" secondItem="Qy6-zI-eQT" secondAttribute="bottom" constant="8" id="VBM-UZ-eoe"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Qy6-zI-eQT" secondAttribute="trailing" constant="20" id="j6Y-uN-5bT"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="19U-S3-MW4" secondAttribute="trailing" constant="20" id="tK5-9y-Erp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pkJ-br-48V" secondAttribute="trailing" constant="14" id="B2h-l8-JMa"/>
+                <constraint firstAttribute="bottom" secondItem="pkJ-br-48V" secondAttribute="bottom" constant="14" id="e8N-Zb-ex8"/>
+                <constraint firstItem="pkJ-br-48V" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="tXC-7E-12U"/>
+                <constraint firstItem="pkJ-br-48V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="yba-hk-mpN"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="questionLabel" destination="19U-S3-MW4" id="bL1-jg-BmM"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="-127.23214285714285"/>
+            <point key="canvasLocation" x="139.13043478260872" y="-120.53571428571428"/>
         </view>
     </objects>
 </document>

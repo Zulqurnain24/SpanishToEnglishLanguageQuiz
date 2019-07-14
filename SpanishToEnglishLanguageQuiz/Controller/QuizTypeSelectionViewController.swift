@@ -14,14 +14,21 @@ class QuizTypeSelectionViewController: UIViewController {
     
     @IBOutlet weak var isQuizTypeSpanishToggleSwitch: UISwitch!
     
-    let buttonView = Bundle.main.loadNibNamed("ButtonView", owner: self, options: nil)?.last as! ButtonView
+    let buttonView = Bundle.main.loadNibNamed(Nib.buttonView.rawValue, owner: self, options: nil)?.last as! ButtonView
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configure()
         Configuration.shared.isSpanishToEnglishQuizType  = isQuizTypeSpanishToggleSwitch.isOn
-        
         setupView()
+    }
+    
+    func configure() {
+        self.title = Strings.QuizTypeSelectionViewControllerTitle.rawValue
+        self.view.accessibilityIdentifier = Strings.QuizTypeSelectionViewControllerAccessibilityIdentifier.rawValue
+        
+        self.isQuizTypeSpanishToggleSwitch.accessibilityIdentifier = "isQuizTypeSpanishToggleSwitch"
     }
     
     func setupView() {
