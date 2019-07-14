@@ -39,7 +39,6 @@
 		6636B29A22DA08E900D721C7 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6636B29922DA08E900D721C7 /* QuestionView.xib */; };
 		6636B2A322DA1B7A00D721C7 /* AudioAssisstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636B2A222DA1B7A00D721C7 /* AudioAssisstant.swift */; };
 		6636B2AE22DA1BD400D721C7 /* loose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2A822DA1BD300D721C7 /* loose.wav */; };
-		6636B2B122DA1BD400D721C7 /* timerTick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2A922DA1BD400D721C7 /* timerTick.wav */; };
 		6636B2B422DA1BD400D721C7 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6636B2AA22DA1BD400D721C7 /* win.wav */; };
 		663F6D7C22DA4CD4008BC94C /* GamePlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6D7B22DA4CD4008BC94C /* GamePlayViewModel.swift */; };
 		663F6D7E22DA513C008BC94C /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6D7D22DA513C008BC94C /* ScoreView.swift */; };
@@ -114,7 +113,6 @@
 		6636B29922DA08E900D721C7 /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
 		6636B2A222DA1B7A00D721C7 /* AudioAssisstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioAssisstant.swift; sourceTree = "<group>"; };
 		6636B2A822DA1BD300D721C7 /* loose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loose.wav; sourceTree = "<group>"; };
-		6636B2A922DA1BD400D721C7 /* timerTick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = timerTick.wav; sourceTree = "<group>"; };
 		6636B2AA22DA1BD400D721C7 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		663F6D7B22DA4CD4008BC94C /* GamePlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewModel.swift; sourceTree = "<group>"; };
 		663F6D7D22DA513C008BC94C /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
@@ -310,7 +308,6 @@
 				663F6D8D22DAA906008BC94C /* bubblePop.wav */,
 				6636B2AA22DA1BD400D721C7 /* win.wav */,
 				6636B2A822DA1BD300D721C7 /* loose.wav */,
-				6636B2A922DA1BD400D721C7 /* timerTick.wav */,
 			);
 			path = AudioFiles;
 			sourceTree = "<group>";
@@ -432,7 +429,6 @@
 				663F6D8622DA9064008BC94C /* LabelView.xib in Resources */,
 				6636B2B422DA1BD400D721C7 /* win.wav in Resources */,
 				6636B2AE22DA1BD400D721C7 /* loose.wav in Resources */,
-				6636B2B122DA1BD400D721C7 /* timerTick.wav in Resources */,
 				6636B24D22D9C8CB00D721C7 /* WordBubbleView.xib in Resources */,
 				6636B27122D9D90700D721C7 /* TutorialImageView.xib in Resources */,
 				6636B26122D9D6DB00D721C7 /* ButtonView.xib in Resources */,

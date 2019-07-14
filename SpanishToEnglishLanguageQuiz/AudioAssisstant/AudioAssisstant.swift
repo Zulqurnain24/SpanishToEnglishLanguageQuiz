@@ -29,8 +29,6 @@ enum AudioFiles: String {
     
     case levelMusic1 = "levelMusic"
 
-    case timerTick = "timerTick"
-    
     case bubblePop = "bubblePop"
 }
 

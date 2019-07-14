@@ -20,7 +20,6 @@ class SpanishToEnglishLanguageQuiz_TestEnums: XCTestCase {
         checStringValue(AudioFiles.win.rawValue, "win")
         checStringValue(AudioFiles.loose.rawValue, "loose")
         checStringValue(AudioFiles.levelMusic1.rawValue, "levelMusic")
-        checStringValue(AudioFiles.timerTick.rawValue, "timerTick")
         checStringValue(AudioFiles.bubblePop.rawValue, "bubblePop")
 
         //Test Constant enums

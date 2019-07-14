@@ -28,15 +28,6 @@ class SpanishToEnglishLanguageQuiz_UITestViewcontrollers: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    
-    //Test Quiz Type Toggle
-    func testQuizTypeSelectionViewController() {
-        let app = XCUIApplication()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0, execute: {
-        let nextButton = app.buttons["isQuizTypeSpanishToggleSwitch"]
-        nextButton.tap()
-        })
-    }
 
     //Test GamePlay
     func testQuizTypeGamePlayViewController() {
