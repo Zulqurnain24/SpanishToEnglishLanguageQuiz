@@ -10,21 +10,30 @@ import UIKit
 
 class QuizTypeSelectionViewController: UIViewController {
 
+    @IBOutlet weak var proceedButtonView: UIView!
+    
+    @IBOutlet weak var isQuizTypeSpanishToggleSwitch: UISwitch!
+    
+    let buttonView = Bundle.main.loadNibNamed("ButtonView", owner: self, options: nil)?.last as! ButtonView
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        Configuration.shared.isSpanishToEnglishQuizType  = isQuizTypeSpanishToggleSwitch.isOn
+        
+        setupView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupView() {
+        buttonView.setButtonTitle(Strings.nextButtonTitle.rawValue)
+        buttonView.buttonCallback = {
+             self.performSegue(withIdentifier: Route.quizSelectToGamePlayTransition.rawValue, sender: self)
+        }
+        proceedButtonView.addSubview(buttonView)
     }
-    */
+
+    @IBAction func toggleQuizType(_ sender: UISwitch) {
+        Configuration.shared.isSpanishToEnglishQuizType = sender.isOn
+    }
 
 }

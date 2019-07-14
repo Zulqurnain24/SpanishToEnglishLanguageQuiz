@@ -7,7 +7,35 @@
 		<key>SpanishToEnglishLanguageQuiz.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>SpanishToEnglishLanguageQuizTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>SpanishToEnglishLanguageQuizUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6636B20122D9C53600D721C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6636B21522D9C53700D721C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6636B22022D9C53700D721C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -10,9 +10,21 @@ import UIKit
 
 class SplashScreenViewController: UIViewController {
 
+    @IBOutlet weak var splashAnimationView: UIView!
+
+    let splashScreenImageView = Bundle.main.loadNibNamed("SplashScreenImageView", owner: self, options: nil)?.last as! SplashScreenImageView
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        AudioAssisstant.shared.playSound(soundName: AudioFiles.levelMusic1.rawValue, withFormat: AudioFormats.mp3.rawValue)
+        splashAnimationView.addSubview(splashScreenImageView)
+        splashScreenImageView.initiateAnimation({
+            self.performSegueToTutorialViewController()
+        })
+    }
+    
+    func performSegueToTutorialViewController() {
+        performSegue(withIdentifier: Route.splashToTutorialScreenTransition.rawValue, sender: self)
     }
 
 

@@ -17,12 +17,378 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueC-76-yEY">
+                                <rect key="frame" x="0.0" y="212" width="414" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ueC-76-yEY" secondAttribute="trailing" id="cff-rI-L9d"/>
+                            <constraint firstItem="ueC-76-yEY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m4J-WN-ZMz"/>
+                            <constraint firstItem="ueC-76-yEY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-61" id="mB6-6b-nTy"/>
+                            <constraint firstItem="ueC-76-yEY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="168" id="pUW-Hg-BrX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lmh-co-gen"/>
+                    <connections>
+                        <outlet property="splashAnimationView" destination="ueC-76-yEY" id="S0C-Ll-KaO"/>
+                        <segue destination="q0e-dA-php" kind="show" identifier="splashToTutorialScreenTransition" id="pHg-rB-P2S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-149.27536231884059" y="18.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BXu-LA-wMf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="q0e-dA-php" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T76-hl-TY2">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.96080166101455688" green="0.6218734279362349" blue="0.065627099117686827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.96080166101455688" green="0.61904931884080461" blue="0.067780633815599248" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.96080166101455688" green="0.62412511966606321" blue="0.073455069096010545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dPd-9U-3lg" kind="relationship" relationship="rootViewController" id="PUa-fh-F4b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKA-u0-3qw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="19"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="i3N-fr-euj">
+            <objects>
+                <viewController title="Tutorial" id="dPd-9U-3lg" customClass="TutorialViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YKj-fj-YAl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ib-1q-XYw">
+                                <rect key="frame" x="20" y="44" width="374" height="770"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Ib-1q-XYw" firstAttribute="top" secondItem="X1U-mZ-z3y" secondAttribute="top" id="1WX-OK-zeC"/>
+                            <constraint firstItem="6Ib-1q-XYw" firstAttribute="leading" secondItem="X1U-mZ-z3y" secondAttribute="leading" constant="20" id="8ka-zp-gbP"/>
+                            <constraint firstItem="X1U-mZ-z3y" firstAttribute="trailing" secondItem="6Ib-1q-XYw" secondAttribute="trailing" constant="20" id="KWi-0N-XP3"/>
+                            <constraint firstItem="6Ib-1q-XYw" firstAttribute="bottom" secondItem="X1U-mZ-z3y" secondAttribute="bottom" constant="-48" id="w97-38-Hq7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X1U-mZ-z3y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cz8-0d-wW2"/>
+                    <connections>
+                        <outlet property="tutorialView" destination="6Ib-1q-XYw" id="Nmp-fY-pu6"/>
+                        <segue destination="D0E-Hc-Odw" kind="show" identifier="quizTutorialToSelectQuizTransition" id="Pkj-IU-wWL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2P-7M-gVS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828.985507246377" y="18.75"/>
+        </scene>
+        <!--Game Play View Controller-->
+        <scene sceneID="fb6-WG-7I4">
+            <objects>
+                <viewController id="bM1-Ob-PD7" customClass="GamePlayViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G4a-T3-i9J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVr-pj-OJ4">
+                                <rect key="frame" x="20" y="117" width="130" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="3vO-H5-lfB"/>
+                                    <constraint firstAttribute="width" constant="130" id="k6h-r0-EFc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="luP-3x-bcB">
+                                <rect key="frame" x="264" y="117" width="130" height="76"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="KDf-ZH-9Ln"/>
+                                    <constraint firstAttribute="height" constant="76" id="uIQ-NV-iz2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OY-BP-GtH">
+                                <rect key="frame" x="0.0" y="363" width="414" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="bIU-0Y-U1g"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="207" id="dl9-pe-cAw"/>
+                                    <constraint firstAttribute="width" constant="414" id="zOB-vc-gc2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwJ-9j-ngT">
+                                <rect key="frame" x="100" y="-214" width="250" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="J1g-px-GPB"/>
+                                    <constraint firstAttribute="width" constant="250" id="TC5-yN-SOj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oa-uH-0vp">
+                                <rect key="frame" x="82" y="715" width="250" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="HaA-fz-8Xv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="dxE-wY-qr8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="o2n-Wj-tkK"/>
+                                    <constraint firstAttribute="width" constant="250" id="qvS-ZD-rRQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1OY-BP-GtH" firstAttribute="centerY" secondItem="G4a-T3-i9J" secondAttribute="centerY" constant="47.5" id="1ae-HN-xiS"/>
+                            <constraint firstItem="GwJ-9j-ngT" firstAttribute="top" secondItem="YlR-v8-NZO" secondAttribute="top" constant="-258" id="4q4-77-Kod"/>
+                            <constraint firstItem="luP-3x-bcB" firstAttribute="top" secondItem="YlR-v8-NZO" secondAttribute="top" constant="73" id="CQa-rA-iR4"/>
+                            <constraint firstItem="hVr-pj-OJ4" firstAttribute="top" secondItem="YlR-v8-NZO" secondAttribute="top" constant="73" id="Heu-oX-55S"/>
+                            <constraint firstItem="3oa-uH-0vp" firstAttribute="top" secondItem="1OY-BP-GtH" secondAttribute="bottom" constant="87" id="S72-Wf-5Ei"/>
+                            <constraint firstItem="hVr-pj-OJ4" firstAttribute="leading" secondItem="YlR-v8-NZO" secondAttribute="leading" constant="20" id="aum-ex-nu7"/>
+                            <constraint firstItem="luP-3x-bcB" firstAttribute="trailing" secondItem="YlR-v8-NZO" secondAttribute="trailing" constant="-20" id="emq-bc-xKa"/>
+                            <constraint firstItem="1OY-BP-GtH" firstAttribute="centerX" secondItem="G4a-T3-i9J" secondAttribute="centerX" id="nug-kM-Q80"/>
+                            <constraint firstItem="YlR-v8-NZO" firstAttribute="bottom" secondItem="3oa-uH-0vp" secondAttribute="bottom" constant="77" id="rgr-UJ-2WN"/>
+                            <constraint firstAttribute="trailing" secondItem="GwJ-9j-ngT" secondAttribute="trailing" constant="64" id="rno-Il-1te"/>
+                            <constraint firstItem="3oa-uH-0vp" firstAttribute="trailing" secondItem="YlR-v8-NZO" secondAttribute="trailing" constant="-82" id="skb-36-6Iw"/>
+                            <constraint firstItem="3oa-uH-0vp" firstAttribute="leading" secondItem="YlR-v8-NZO" secondAttribute="leading" constant="82" id="yeF-po-xyO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YlR-v8-NZO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kcz-ES-4IF"/>
+                    <connections>
+                        <outlet property="bubbleDisplayView" destination="GwJ-9j-ngT" id="VWA-uL-YYK"/>
+                        <outlet property="nextButtonDisplayView" destination="3oa-uH-0vp" id="dcU-tt-eMs"/>
+                        <outlet property="quizQuestionDisplayView" destination="1OY-BP-GtH" id="4un-F5-62K"/>
+                        <outlet property="scoreDisplayView" destination="luP-3x-bcB" id="Hb2-oq-2aF"/>
+                        <outlet property="stopWatchDisplayView" destination="hVr-pj-OJ4" id="4zM-Jl-r7n"/>
+                        <segue destination="fhr-bi-v4E" kind="show" identifier="gamePlayToScoreScreenTransition" id="4ly-hS-GbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kh3-Or-vuZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3692.753623188406" y="18.75"/>
+        </scene>
+        <!--Score Screen View Controller-->
+        <scene sceneID="mgT-gG-isB">
+            <objects>
+                <viewController id="fhr-bi-v4E" customClass="ScoreScreenViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iZe-81-BF4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAO-Qi-1vO">
+                                <rect key="frame" x="0.0" y="170" width="414" height="142"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="4yz-Xz-jIu"/>
+                                    <constraint firstAttribute="height" constant="142" id="6pn-Ft-D0H"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0p-eW-Sk4">
+                                <rect key="frame" x="0.0" y="368" width="414" height="142"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Dn2-fa-pek"/>
+                                    <constraint firstAttribute="height" constant="142" id="OSj-Gm-CWq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6J-kU-xk0">
+                                <rect key="frame" x="82" y="675" width="250" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="QE9-vF-vdh"/>
+                                    <constraint firstAttribute="width" constant="250" id="VuE-MS-Snj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M0p-eW-Sk4" firstAttribute="top" secondItem="OAO-Qi-1vO" secondAttribute="bottom" constant="56" id="5t2-NH-gkZ"/>
+                            <constraint firstItem="OAO-Qi-1vO" firstAttribute="leading" secondItem="iZe-81-BF4" secondAttribute="leading" id="Bgv-fm-tNj"/>
+                            <constraint firstItem="Ez1-tS-uX9" firstAttribute="bottom" secondItem="e6J-kU-xk0" secondAttribute="bottom" constant="117" id="K8I-hY-lWU"/>
+                            <constraint firstItem="M0p-eW-Sk4" firstAttribute="centerX" secondItem="e6J-kU-xk0" secondAttribute="centerX" id="e6l-fE-dd2"/>
+                            <constraint firstItem="OAO-Qi-1vO" firstAttribute="top" secondItem="Ez1-tS-uX9" secondAttribute="top" constant="126" id="syj-No-qqV"/>
+                            <constraint firstItem="OAO-Qi-1vO" firstAttribute="leading" secondItem="M0p-eW-Sk4" secondAttribute="leading" id="vjS-8X-jHq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ez1-tS-uX9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nbD-O9-nLW"/>
+                    <connections>
+                        <outlet property="nextButtonDisplayView" destination="e6J-kU-xk0" id="ciM-QE-enY"/>
+                        <outlet property="scoreDateDisplayView" destination="M0p-eW-Sk4" id="Pfi-2H-4VP"/>
+                        <outlet property="scoreValueDisplayView" destination="OAO-Qi-1vO" id="hOC-5r-aVS"/>
+                        <segue destination="gZn-rT-2ZD" kind="show" identifier="scoreScreenToGameRouteTransition" id="RxC-cV-hI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFW-tA-qTi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4647.826086956522" y="18.75"/>
+        </scene>
+        <!--Select Quiz Type-->
+        <scene sceneID="qYR-pQ-8r0">
+            <objects>
+                <viewController title="Select Quiz Type" id="D0E-Hc-Odw" customClass="QuizTypeSelectionViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c6U-1d-9uQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVl-b2-bpr">
+                                <rect key="frame" x="0.0" y="274" width="406" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spanish To English" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-MS-8cO">
+                                        <rect key="frame" x="232" y="0.0" width="174" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English To Spanish" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iY-8G-Axk">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bKp-au-a24">
+                                        <rect key="frame" x="175" y="35" width="51" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.96080166099999997" green="0.61904931880000003" blue="0.067780633820000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="onTintColor" red="0.96080166099999997" green="0.61904931880000003" blue="0.067780633820000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="toggleQuizType:" destination="D0E-Hc-Odw" eventType="valueChanged" id="kp7-Zk-lzV"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2Li-f2-Qrn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g33-A5-QD8">
+                                <rect key="frame" x="82" y="467" width="250" height="112"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="PEr-3F-Iro"/>
+                                    <constraint firstAttribute="height" constant="112" id="T29-OH-hEM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g33-A5-QD8" firstAttribute="leading" secondItem="fOw-i9-mSh" secondAttribute="leading" constant="82" id="5zl-EZ-Bs2"/>
+                            <constraint firstItem="fOw-i9-mSh" firstAttribute="trailing" secondItem="g33-A5-QD8" secondAttribute="trailing" constant="82" id="ORP-Qk-njY"/>
+                            <constraint firstItem="lVl-b2-bpr" firstAttribute="leading" secondItem="fOw-i9-mSh" secondAttribute="leading" id="q55-nm-DuD"/>
+                            <constraint firstItem="g33-A5-QD8" firstAttribute="top" secondItem="lVl-b2-bpr" secondAttribute="bottom" constant="93" id="rWn-KS-hZT"/>
+                            <constraint firstItem="fOw-i9-mSh" firstAttribute="trailing" secondItem="lVl-b2-bpr" secondAttribute="trailing" constant="8" id="wBS-vZ-fIj"/>
+                            <constraint firstItem="fOw-i9-mSh" firstAttribute="bottom" secondItem="g33-A5-QD8" secondAttribute="bottom" constant="283" id="xwM-rb-qDS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fOw-i9-mSh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1rc-1Y-1Qs"/>
+                    <connections>
+                        <outlet property="isQuizTypeSpanishToggleSwitch" destination="bKp-au-a24" id="oaV-0l-hpr"/>
+                        <outlet property="proceedButtonView" destination="g33-A5-QD8" id="fLd-1o-7aJ"/>
+                        <segue destination="bM1-Ob-PD7" kind="show" identifier="quizSelectToGamePlayTransition" id="uau-G8-viN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQ1-p7-07J" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2694.202898550725" y="18.75"/>
+        </scene>
+        <!--Game Route View Controller-->
+        <scene sceneID="foJ-2O-JgF">
+            <objects>
+                <viewController id="gZn-rT-2ZD" customClass="GameRouteViewController" customModule="SpanishToEnglishLanguageQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8z5-RT-YL1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLx-Rj-neb">
+                                <rect key="frame" x="82" y="575" width="250" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.96080166099999997" green="0.61904931880000003" blue="0.067780633820000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="3xp-Mo-YW3"/>
+                                    <constraint firstAttribute="height" constant="70" id="UQ6-wK-g1g"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjk-lh-clk">
+                                <rect key="frame" x="82" y="718" width="250" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.96080166099999997" green="0.61904931880000003" blue="0.067780633820000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="pal-0Q-mzL"/>
+                                    <constraint firstAttribute="height" constant="70" id="xjK-3q-BpA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDC-1N-iOw">
+                                <rect key="frame" x="20" y="128" width="374" height="393"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v7m-ru-B4S" firstAttribute="bottom" secondItem="yjk-lh-clk" secondAttribute="bottom" constant="74" id="4md-h3-7Wu"/>
+                            <constraint firstItem="v7m-ru-B4S" firstAttribute="trailing" secondItem="wLx-Rj-neb" secondAttribute="trailing" constant="82" id="8cS-hX-UP4"/>
+                            <constraint firstItem="yjk-lh-clk" firstAttribute="leading" secondItem="v7m-ru-B4S" secondAttribute="leading" constant="82" id="96a-CL-aVv"/>
+                            <constraint firstItem="wLx-Rj-neb" firstAttribute="leading" secondItem="v7m-ru-B4S" secondAttribute="leading" constant="82" id="9Ov-U7-Fml"/>
+                            <constraint firstItem="wLx-Rj-neb" firstAttribute="top" secondItem="dDC-1N-iOw" secondAttribute="bottom" constant="54" id="BFh-Ly-Yoa"/>
+                            <constraint firstItem="yjk-lh-clk" firstAttribute="leading" secondItem="v7m-ru-B4S" secondAttribute="leading" constant="82" id="C3k-PE-FbV"/>
+                            <constraint firstItem="yjk-lh-clk" firstAttribute="top" secondItem="wLx-Rj-neb" secondAttribute="bottom" constant="73" id="EnV-rd-w12"/>
+                            <constraint firstItem="v7m-ru-B4S" firstAttribute="trailing" secondItem="wLx-Rj-neb" secondAttribute="trailing" constant="82" id="Hjo-c3-jII"/>
+                            <constraint firstItem="dDC-1N-iOw" firstAttribute="top" secondItem="v7m-ru-B4S" secondAttribute="top" constant="84" id="Nrm-PG-3Eo"/>
+                            <constraint firstItem="v7m-ru-B4S" firstAttribute="bottom" secondItem="yjk-lh-clk" secondAttribute="bottom" constant="74" id="Nsf-5z-Tpb"/>
+                            <constraint firstItem="v7m-ru-B4S" firstAttribute="trailing" secondItem="dDC-1N-iOw" secondAttribute="trailing" constant="20" id="TZl-pk-Gfz"/>
+                            <constraint firstItem="wLx-Rj-neb" firstAttribute="leading" secondItem="v7m-ru-B4S" secondAttribute="leading" constant="82" id="aEq-CU-PjY"/>
+                            <constraint firstItem="yjk-lh-clk" firstAttribute="top" secondItem="wLx-Rj-neb" secondAttribute="bottom" constant="73" id="bda-Mk-iNa"/>
+                            <constraint firstItem="v7m-ru-B4S" firstAttribute="trailing" secondItem="yjk-lh-clk" secondAttribute="trailing" constant="82" id="pbD-j7-7ll"/>
+                            <constraint firstItem="v7m-ru-B4S" firstAttribute="trailing" secondItem="yjk-lh-clk" secondAttribute="trailing" constant="82" id="wHa-N3-8W2"/>
+                            <constraint firstItem="dDC-1N-iOw" firstAttribute="leading" secondItem="v7m-ru-B4S" secondAttribute="leading" constant="20" id="wdv-Rg-oTx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v7m-ru-B4S"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9P9-kT-mOh"/>
+                    <connections>
+                        <outlet property="buttonViewForPlayGameAgain" destination="yjk-lh-clk" id="SDv-Md-otz"/>
+                        <outlet property="buttonViewForQuizSelect" destination="wLx-Rj-neb" id="1g1-fa-JlZ"/>
+                        <outlet property="instructorCommentDisplayView" destination="dDC-1N-iOw" id="HzD-le-2nN"/>
+                        <segue destination="D0E-Hc-Odw" kind="show" identifier="gameRouteScreenToQuizTypeSelectionTransition" id="wHO-fw-LRn"/>
+                        <segue destination="bM1-Ob-PD7" kind="show" identifier="gameRouteScreenToGameplayTransition" id="ZQm-AU-Nh8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeO-Wq-GxC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5562.3188405797109" y="18.75"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wHO-fw-LRn"/>
+        <segue reference="ZQm-AU-Nh8"/>
+    </inferredMetricsTieBreakers>
 </document>
